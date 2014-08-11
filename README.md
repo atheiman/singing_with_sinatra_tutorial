@@ -1,4 +1,4 @@
-singing_with_sinatra_tutorial
+Singing with Sinatra Tutorial
 =============================
 
 Learning the Ruby web framework Sinatra
