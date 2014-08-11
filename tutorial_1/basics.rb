@@ -1,10 +1,6 @@
 =begin
-Tutorial 1 from this series: http://code.tutsplus.com/series/singing-with-sinatra--net-19113
 Tutorial 1 is here: http://code.tutsplus.com/tutorials/singing-with-sinatra--net-18965
-Run from terminal with "shotgun basics.rb". The shotgun gem will restart the sinatra app on every request.
-Without shotgun, you need to restart Sinatra every time you edit the site.
-Sinatra port:4567
-Shotgun port:9393
+Run from terminal with "shotgun basics.rb".
 =end
 
 require 'sinatra'
