@@ -1,8 +1,3 @@
-=begin
-Tutorial 1 is here: http://code.tutsplus.com/tutorials/singing-with-sinatra--net-18965
-Run from terminal with "shotgun basics.rb".
-=end
-
 require 'sinatra'
 
 get '/' do  #localhost:port
