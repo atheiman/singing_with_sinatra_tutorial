@@ -13,7 +13,7 @@ get '/hello/:name' do  #/hello/austin
 end
 
 get '/hello/:name/:city' do  #/hello/austin heiman/op
-	"Hello there, #{params[:name].upcase} from #{params[:city]}!"
+	"Hello there, #{params[:name].upcase} from #{params[:city].capitalize}!"
 end
 
 get '/more/*' do  #/more/some%20more%20stuff
