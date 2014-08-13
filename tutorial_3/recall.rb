@@ -33,18 +33,18 @@ get '/' do
 	erb :home
 end
 
-# Handle POST of new notes.
-post '/' do
-	n = Note.new
-	# Content column is the 'content' textarea from the form.
-	# The h() method below converts html special chars. It could be written with the parentheses, but Ruby says "Why?"
-	n.content = h params[:content]
-	n.created_at = Time.now
-	n.updated_at = Time.now
-	n.save
-	# Once new note added, return to default view (GET /)
-	redirect '/'
-end
+    # Handle POST of new notes.
+    post '/' do
+    	n = Note.new
+    	# Content column is the 'content' textarea from the form.
+    	# The h() method below converts html special chars. It could be written with the parentheses, but Ruby says "Why?"
+    	n.content = h params[:content]
+    	n.created_at = Time.now
+    	n.updated_at = Time.now
+    	n.save
+    	# Once new note added, return to default view (GET /)
+    	redirect '/'
+    end
 
 # Handle editing notes as /:id
 get '/:id' do
